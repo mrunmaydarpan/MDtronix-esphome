@@ -9,7 +9,7 @@ substitutions:
   switchPin_4: GPIO13
   
 esphome:
-  name: bedroom2
+  name: mdtronix_4ch
   platform: ESP8266
   board: d1_mini
   name_add_mac_suffix: true
