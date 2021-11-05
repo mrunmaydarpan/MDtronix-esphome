@@ -8,7 +8,16 @@ substitutions:
   switchPin_3: GPIO12
   switchPin_4: GPIO13
   deviceName: Bedroom 2
-
+  
+esphome:
+  name: bedroom2
+  platform: ESP8266
+  board: d1_mini
+  name_add_mac_suffix: true
+  project:
+    name: "MDtronix.4ch_Smart Switch"
+    version: "1.0"
+    
 output:
   - platform: gpio
     pin: $relayPin_1
