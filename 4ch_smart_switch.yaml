@@ -44,62 +44,62 @@ output:
     pin: $relayPin_4
     id: relay_4
    
-# light:
-#   - platform: binary
-#     output: relay_1
-#     name: $deviceName Tube
-#     id: light_1
-#   - platform: binary
-#     output: relay_2
-#     name: $deviceName Bulb
-#     id: light_2
-#   - platform: binary
-#     output: relay_3
-#     name: Backyard Bulb
-#     id: light_3
+light:
+  - platform: binary
+    output: relay_1
+    name: $deviceName Tube
+    id: light_1
+  - platform: binary
+    output: relay_2
+    name: $deviceName Bulb
+    id: light_2
+  - platform: binary
+    output: relay_3
+    name: Backyard Bulb
+    id: light_3
 
-# fan:
-#   - platform: binary
-#     output: relay_4
-#     name: $deviceName Fan
-#     id: fan_1
+fan:
+  - platform: binary
+    output: relay_4
+    name: $deviceName Fan
+    id: fan_1
     
-# binary_sensor:
-#   - platform: status
-#     name: $deviceName Status
+binary_sensor:
+  - platform: status
+    name: $deviceName Status
     
-#   - platform: gpio
-#     id: switch_1
-#     pin:
-#       number: $switchPin_1
-#       mode: INPUT_PULLUP
-#       inverted: true
-#     on_state:
-#       - light.toggle: light_1
+  - platform: gpio
+    id: switch_1
+    pin:
+      number: $switchPin_1
+      mode: INPUT_PULLUP
+      inverted: true
+    on_state:
+      - light.toggle: light_1
       
-#   - platform: gpio
-#     id: Switch_2
-#     pin:
-#       number: $switchPin_2
-#       mode: INPUT_PULLUP
-#       inverted: true
-#     on_state:
-#       - light.toggle: light_2
+  - platform: gpio
+    id: Switch_2
+    pin:
+      number: $switchPin_2
+      mode: INPUT_PULLUP
+      inverted: true
+    on_state:
+      - light.toggle: light_2
     
-#   - platform: gpio
-#     id: Switch_3
-#     pin:
-#       number: $switchPin_3
-#       mode: INPUT_PULLUP
-#       inverted: true
-#     on_state:
-#       - light.toggle: light_3
+  - platform: gpio
+    id: Switch_3
+    pin:
+      number: $switchPin_3
+      mode: INPUT_PULLUP
+      inverted: true
+    on_state:
+      - light.toggle: light_3
       
-#   - platform: gpio
-#     id: Switch_4
-#     pin:
-#       number: $switchPin_4
-#       mode: INPUT_PULLUP
-#       inverted: true
-#     on_state:
-#       - fan.toggle: fan_1
+  - platform: gpio
+    id: Switch_4
+    pin:
+      number: $switchPin_4
+      mode: INPUT_PULLUP
+      inverted: true
+    on_state:
+      - fan.toggle: fan_1
